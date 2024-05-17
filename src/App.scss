@@ -1,0 +1,34 @@
+
+
+.introduction_section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        z-index: 1;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 300;
+
+        padding: 10px 20px;
+        transition: box-shadow 1s;
+        &:hover{
+            box-shadow: 0 0 50px #c691e6;
+        }
+    }
+    #dotsCanvas{
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+}
